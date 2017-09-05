@@ -10,7 +10,7 @@ Invoke the tool by calling `nugscraper` from the command line. You'll need to co
 
 Options:  
 
-`--url [-u]`  --  URL of the download all window  
-`--dest-dir [-d]`  --  Destination directory  
-`--song-pattern [-s]`  --  Pattern to use when naming song files.  
+--url [-u]          --  URL of the download all window  
+--dest-dir [-d]     --  Destination directory  
+ 
     
