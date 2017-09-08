@@ -1,9 +1,18 @@
-### nugscraper
+## nugscraper
 
 A tool to download files from nugs.net. Will only work with shows that you've purchased!
 
 The nugs.net live music provider has a bulk download tool for Windows and OSX, but none for Linux. I got tired of having to click "download" a ton of times, or use a third-party add-on like DownThemAll, so I decided to write this tool to do it for me.  
 
+### install
+
+`nugscraper` isn't on PyPI yet. To install, clone the repository and use `pip`:
+
+```bash
+git clone https://github.com/tomplex/nugscraper.git
+cd nugscraper
+pip install .
+```
 
 ### usage
 
