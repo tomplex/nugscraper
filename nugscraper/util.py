@@ -3,28 +3,18 @@ __author__ = 'tom caruso'
 import re
 import requests
 
-
 from bs4 import BeautifulSoup as Soup
-from click import progressbar
-from collections import namedtuple
 from pathlib import Path
 from tqdm import tqdm
 
-from nugscraper.config import NUGS_LOGIN_LINK
-
 # regex to get file name from URL
 FILE_NAME = re.compile('/([\w\d]+\.mp3)')
+# Login link
+NUGS_LOGIN_LINK = "https://nugs.net/login.aspx?rdto=redirToCatalog.aspx&rdtoParams=goto,rto&rdtoParamValues=csite,default.aspx"
 
 
 def download_file_with_progressbar(url, file_path, n, lock):
-    """
-    tqdm
-    :param url:
-    :param file_path:
-    :param n:
-    :param lock:
-    :return:
-    """
+
     r = requests.get(url, stream=True)
     full_size = r.headers['content-length']
 
