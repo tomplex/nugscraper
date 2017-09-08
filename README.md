@@ -17,6 +17,7 @@ pip install .
 ### usage
 
 Invoke the tool by calling `nugscraper` from the command line. You'll need to copy and paste the link from a "download all" window for usage in this tool.  
+
 `nugscraper` requires your nugs.net username and password to log in and download your songs. Your username and password are not saved in any way. You can provide your credentials as environment variables, `NUGS_USERNAME` and `NUGS_PASSWORD`. If you do not set these variables, `nugscraper` will prompt for your username/password.
 
 
