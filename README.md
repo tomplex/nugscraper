@@ -13,7 +13,7 @@ Invoke the tool by calling `nugscraper` from the command line. You'll need to co
 Usage: nugscraper [OPTIONS]
 
 Options:  
-  -u, --url TEXT           URL of 'download all' window. Can be used multiple times to scrape more than one page.  [required]  
+  -u, --url TEXT           URL of 'download all' window. Can be used multiple times to scrape more than one page. [required]  
   -d, --dest-dir TEXT      Destination for downloaded files  [required]  
   -n, --num-procs INTEGER  Number of download processes [default: 3]  
   --help                   Show this message and exit.  

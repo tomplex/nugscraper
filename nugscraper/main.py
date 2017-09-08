@@ -12,7 +12,7 @@ from nugscraper.util import download_file_with_progressbar, get_payload, get_log
 
 
 @click.command()
-@click.option('--url', '-u', required=True, multiple=True, help="URL of 'download all' window")
+@click.option('--url', '-u', required=True, multiple=True, help="URL of 'download all' window. Can be used multiple times to scrape more than one page.")
 @click.option('--dest-dir', '-d', required=True, help="Destination for downloaded files")
 @click.option('--num-procs', '-n', required=False, default=3, help="Number of download processes [default: 3]")
 def nugscraper(url, dest_dir, num_procs):
